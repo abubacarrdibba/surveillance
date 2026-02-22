@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surveillance and Security SAS</title>
+
+<!-- ScrollReveal CDN -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+ 
+/* ===== SECTION HEADER ===== */
+.section-title{
+    background:#8c8c8c;
+    color:white;
+    padding:30px 40px;
+    font-size:40px;
+    font-weight:bold;
+    letter-spacing:1px;
+    position:relative;
+}
+
+.section-title::after{
+    content:"";
+    position:absolute;
+    right:40px;
+    top:50%;
+    transform:translateY(-50%);
+    width:120px;
+    height:6px;
+    background:white;
+    box-shadow:0 12px 0 white, 0 -12px 0 white;
+}
+
+/* ===== WATERMARK BACKGROUND ===== */
+.products{
+    padding:40px;
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(0,0,0,0.03) 0,
+        rgba(0,0,0,0.03) 20px,
+        transparent 20px,
+        transparent 40px
+    );
+}
+ 
+/* ===== SLIDER ===== */
+.slider{
+    width:100%;
+    overflow:hidden;
+}
+
+.slides{
+    
+    width:100%;
+    animation: slide 30s infinite;
+}
+
+.slide{
+    width:100%;
+    padding:40px;
+    box-sizing:border-box;
+}
+
+/* ===== GLASS EFFECT ===== */
+.glass{
+    background: rgba(129, 140, 213, 0.649);
+    backdrop-filter: blur(15px);
+    border-radius:20px;
+    padding:30px;
+    color:rgb(3, 3, 3);
+    box-shadow:0 12px 39px rgba(29, 27, 27, 0.3);
+}
+
+/* ===== COMPANY SLIDE ===== */
+.company-header{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.company-header img{
+    width:120px;
+}
+
+.company-header h1{
+    font-size:32px;
+}
+
+.company-info p{
+    margin:8px 0;
+    line-height:1.6;
+}
+
+    
+
+ 
+ 
+
+/* ===== PRODUCT ROW ===== */
+.product-row{
+    display:grid;
+    grid-template-columns: 250px 1fr 220px;
+    align-items:center;
+    border:2px solid #e30613;
+    background:white;
+    margin-bottom:25px;
+    padding:20px;
+    transition:0.3s;
+}
+
+.product-row:hover{
+    transform:scale(1.01);
+    box-shadow:0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* IMAGE COLUMN */
+.product-row img{
+    width:100%;
+    max-width:200px;
+}
+
+/* DESCRIPTION COLUMN */
+.description{
+    padding:0 30px;
+}
+
+.description h3{
+    margin:0;
+    font-size:26px;
+    font-weight:bold;
+}
+
+.description p{
+    margin:8px 0;
+    font-size:18px;
+}
+
+/* PRICE COLUMN */
+.price{
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .product-row{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:20px;
+    }
+    .description{
+        padding:0;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="slider">
+
+<div class="slides" id="slides">
+
+<!-- ===== COMPANY INTRO SLIDE ===== -->
+<div class="slide">
+<div class="glass">
+<div class="company-header">
+<img src="./image/WhatsApp Image 2026-01-17 at 12.44.19 PM.jpeg" alt="Company Logo">
+<h1>Surveillance and Security SAS</h1>
+</div>
+
+<div class="company-info">
+<p>Surveillance and Security SAS provides professional security solutions including:</p>
+<p>• CCTV Installation & Monitoring</p>
+<p>• Electric Fencing Systems</p>
+<p>• Electric Fence Energisers</p>
+<p>• Intruder Alarm Systems</p>
+<p>• NVR & IP Surveillance Solutions</p>
+<p>• Professional Man Guard Services</p>
+
+<br>
+
+<p><strong>Contact:</strong> +220 226 6913</p>
+<p><strong>Email:</strong> info@surveillanceandsecurity.co.uk</p>
+<p><strong>Website:</strong> www.surveillanceandsecurity.co.uk</p>
+</div>
+</div>
+</div>
+
+ <!-- ================= Electric Fence Materials ================= -->
+<div class="section-title">Electric Fence Materials</div>
+
+<div class="products">
+
+<!-- Electric Fence Energiser -->
+<div class="product-row">
+<img src="./image/Electric Fence materials/sas1.jfif" alt="Electric Fence Energiser">
+<div class="description">
+<h3>Electric Fence Energiser (Nemtek / Equivalent)</h3>
+<p>Generates high voltage pulses to power the fence line</p>
+<p>Suitable for residential & commercial perimeter security</p>
+</div>
+<div class="price">GMD 24,000.00</div>
+</div>
+
+<!-- High Tensile Fence Wire -->
+<div class="product-row">
+<img src="./image/Electric Fence materials/sas2.jfif" alt="Electric Fence Wire">
+<div class="description">
+<h3>High Tensile Galvanised Fence Wire (Roll)</h3>
+<p>Conducts electric current around the perimeter</p>
+<p>Corrosion resistant | Long lasting steel conductor</p>
+</div>
+<div class="price">GMD 4,500.00</div>
+</div>
+
+<!-- Insulators (Bobbin) -->
+<div class="product-row">
+<img src="./image/Electric Fence materials/sas3.jfif" alt="Fence Insulators">
+<div class="description">
+<h3>Electric Fence Insulators (Bobbin Pack)</h3>
+<p>Prevents current loss by isolating wire from posts</p>
+<p>UV Resistant | Suitable for wall-top fencing</p>
+</div>
+<div class="price">GMD 1,200.00</div>
+</div>
+
+<!-- Y-Stand / Wall Top Brackets -->
+<div class="product-row">
+<img src="./image/Electric Fence materials/sas4.png" alt="Wall Top Brackets">
+<div class="description">
+<h3>Wall Top Y-Stand Brackets</h3>
+<p>Supports electric fence wires above wall perimeter</p>
+<p>Hot-dip galvanised | Rust resistant steel</p>
+</div>
+<div class="price">GMD 1,800.00</div>
+</div>
+
+ 
+
+</div>
+
+<!-- ================= ELECTRIC FENCE ENERGISERS ================= -->
+<div class="section-title">Electric Fence Energisers</div>
+
+<div class="products">
+
+<div class="product-row">
+<img src="./image/Electric Fence Energisers/SAS 1.jfif" alt="">
+<div class="description">
+<h3>Druid 13 Nemtek Energiser</h3>
+<p>High Performance Output</p>
+<p>Reliable Perimeter Security</p>
+</div>
+<div class="price">GMD 21,000.00</div>
+</div>
+
+<div class="product-row">
+<img src="./image/Electric Fence Energisers/SAS 2.jfif" alt="">
+<div class="description">
+<h3>Druid 15 Nemtek Energiser</h3>
+<p>Advanced Protection</p>
+<p>Industrial & Residential Use</p>
+</div>
+<div class="price">GMD 24,000.00</div>
+</div>
+
+<div class="product-row">
+<img src="./image/Electric Fence Energisers/SAS 3.jfif" alt="">
+<div class="description">
+<h3>Druid 18 Nemtek Energiser</h3>
+<p>Long Distance Coverage</p>
+<p>High Voltage Security System</p>
+</div>
+<div class="price">GMD 38,000.00</div>
+</div>
+
+<div class="product-row">
+<img src="./image/Electric Fence Energisers/SAS 4.jfif" alt="">
+<div class="description">
+<h3>Druid 114 Nemtek Energiser</h3>
+<p>Heavy Duty Output</p>
+<p>Maximum Protection</p>
+</div>
+<div class="price">GMD 48,000.00</div>
+</div>
+
+</div>
+
+
+<!-- ================= CCTV CAMERAS & NVR ================= -->
+<div class="section-title">CCTV Cameras and NVR'S</div>
+
+<div class="products">
+
+<div class="product-row">
+<img src="./image/CCTV Cameras and NVR'S/sas1.jfif" alt="">
+<div class="description">
+<h3>4MP Fixed IR Bullet Camera</h3>
+<p>IP with Audio</p>
+<p>2.8mm Lens | TC-C34QN</p>
+</div>
+<div class="price">GMD 4,500.00</div>
+</div>
+
+<div class="product-row">
+<img src="./image/CCTV Cameras and NVR'S/sas2.jfif" alt="">
+<div class="description">
+<h3>4MP Fixed Turret Dome Camera</h3>
+<p>IP with Audio</p>
+<p>2.8mm Lens | TC-C34XN</p>
+</div>
+<div class="price">GMD 4,500.00</div>
+</div>
+
+<div class="product-row">
+<img src="./image/CCTV Cameras and NVR'S/sas3.jfif" alt="">
+<div class="description">
+<h3>2MP Fixed Turret Dome Camera</h3>
+<p>IP with Audio</p>
+<p>2.8mm Lens | TC-C32XN</p>
+</div>
+<div class="price">GMD 3,300.00</div>
+</div>
+
+<div class="product-row">
+<img src="./image/CCTV Cameras and NVR'S/sas4.jfif" alt="">
+<div class="description">
+<h3>2MP Fixed Bullet Camera</h3>
+<p>IP with Audio</p>
+<p>2.8mm Lens | TC-C32QN</p>
+</div>
+<div class="price">GMD 3,300.00</div>
+</div>
+</div>
+
+
+ <!-- ================ Intruder Alarm Systems ================= -->
+<div class="section-title">Intruder Alarm Systems</div>
+
+<div class="products">
+
+<!-- GSM Wireless Alarm Kit -->
+<div class="product-row">
+<img src="./image/Intruder Alarm Systems/sas1.jfif" alt="Wireless Alarm Kit">
+<div class="description">
+<h3>GSM Wireless Intruder Alarm Kit</h3>
+<p>Control Panel + 2 PIR Sensors + 2 Door Contacts</p>
+<p>Remote Control | SMS Alert | Siren Included</p>
+</div>
+<div class="price">GMD 12,500.00</div>
+</div>
+
+<!-- PIR Motion Sensor -->
+<div class="product-row">
+<img src="./image/Intruder Alarm Systems/sas2.jfif" alt="PIR Sensor">
+<div class="description">
+<h3>PIR Motion Detector Sensor</h3>
+<p>Indoor Motion Detection</p>
+<p>Wide Angle | Pet Immune Option</p>
+</div>
+<div class="price">GMD 1,850.00</div>
+</div>
+
+<!-- Door Magnetic Contact -->
+<div class="product-row">
+<img src="./image/Intruder Alarm Systems/sas3.jfif" alt="Door Contact">
+<div class="description">
+<h3>Magnetic Door/Window Contact</h3>
+<p>Open/Close Detection</p>
+<p>Wired or Wireless Option</p>
+</div>
+<div class="price">GMD 950.00</div>
+</div>
+
+<!-- Outdoor Siren -->
+<div class="product-row">
+<img src="./image/Intruder Alarm Systems/sas4.jfif" alt="Outdoor Siren">
+<div class="description">
+<h3>Outdoor Alarm Siren</h3>
+<p>High Volume Sound Output</p>
+<p>Weatherproof | Flashing Strobe Light</p>
+</div>
+<div class="price">GMD 2,400.00</div>
+</div>
+
+ 
+
+</div>
+
+</body>
+</html>
